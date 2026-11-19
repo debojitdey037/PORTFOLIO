@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cert-1",
+    "title": "Python (Basic)",
+    "issuer": "HackerRank",
+    "issuedDate": "Jul 2026",
+    "credentialId": "42F88A64BDDB",
+    "credentialUrl": "https://www.hackerrank.com/certificates/42f88a64bddb",
+    "logo": "/images/cert-hackerrank.png"
+  },
+  {
+    "id": "cert-2",
+    "title": "CRUD Operations in MongoDB",
+    "issuer": "MongoDB",
+    "issuedDate": "Jun 2026",
+    "credentialId": "MDBjyssb84dw6",
+    "credentialUrl": "https://learn.mongodb.com/c/jVny_XN8T5qMwt5KzQIH6A",
+    "logo": "/images/cert-mongodb.png"
+  }
+]
