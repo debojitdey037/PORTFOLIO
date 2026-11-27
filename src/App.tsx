@@ -1,7 +1,6 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import "./App.css";
 
-const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const AdminDashboard = lazy(() => import("./components/Admin/AdminDashboard"));
 import { LoadingProvider } from "./context/LoadingProvider";
@@ -50,11 +49,7 @@ const App = () => {
     <>
       <LoadingProvider>
         <Suspense>
-          <MainContainer>
-            <Suspense>
-              <CharacterModel />
-            </Suspense>
-          </MainContainer>
+          <MainContainer />
         </Suspense>
       </LoadingProvider>
     </>

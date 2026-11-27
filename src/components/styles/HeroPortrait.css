@@ -4,9 +4,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 540px;
-  height: 82vh;
-  max-height: 720px;
+  max-width: 620px;
+  height: 88vh;
+  max-height: 820px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,16 +16,16 @@
 
 .hero-3d-halo {
   position: absolute;
-  width: 380px;
-  height: 480px;
+  width: 480px;
+  height: 560px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(196, 129, 255, 0.22) 0%,
-    rgba(84, 0, 255, 0.14) 45%,
+    rgba(196, 129, 255, 0.28) 0%,
+    rgba(84, 0, 255, 0.18) 45%,
     transparent 70%
   );
-  filter: blur(50px);
+  filter: blur(60px);
   pointer-events: none;
   z-index: 1;
   transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -45,16 +45,16 @@
 .hero-3d-grid {
   position: absolute;
   bottom: 0;
-  width: 86%;
-  height: 85%;
-  border-radius: 24px;
+  width: 88%;
+  height: 88%;
+  border-radius: 28px;
   background-image: 
-    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 20px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 22px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 
-    0 30px 60px -12px rgba(0, 0, 0, 0.8),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 35px 70px -15px rgba(0, 0, 0, 0.9),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   z-index: 2;
   pointer-events: none;
   transform: translateZ(5px);
@@ -68,23 +68,23 @@
   align-items: flex-end;
   justify-content: center;
   z-index: 3;
-  transform: translateZ(25px);
+  transform: translateZ(35px);
   overflow: visible;
 }
 
 .hero-3d-photo {
-  max-width: 88%;
-  max-height: 94%;
+  max-width: 95%;
+  max-height: 96%;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.8));
   user-select: none;
   pointer-events: none;
   transition: filter 0.3s ease;
 }
 
 .hero-3d-wrapper:hover .hero-3d-photo {
-  filter: drop-shadow(0 25px 35px rgba(196, 129, 255, 0.25));
+  filter: drop-shadow(0 30px 45px rgba(196, 129, 255, 0.35));
 }
 
 .hero-bottom-fade {
