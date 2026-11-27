@@ -1,11 +1,11 @@
-import HeroPortrait from "./HeroPortrait";
+import ParticlePortrait from "./ParticlePortrait";
 import "./styles/Landing.css";
 
 const Landing = () => {
   return (
     <>
       <div className="landing-section" id="landingDiv">
-        <HeroPortrait />
+        <ParticlePortrait />
         <div className="landing-container">
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
