@@ -1,11 +1,10 @@
-import ParticlePortrait from "./ParticlePortrait";
+import { PropsWithChildren } from "react";
 import "./styles/Landing.css";
 
-const Landing = () => {
+const Landing = ({ children }: PropsWithChildren) => {
   return (
     <>
       <div className="landing-section" id="landingDiv">
-        <ParticlePortrait />
         <div className="landing-container">
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
@@ -29,6 +28,7 @@ const Landing = () => {
             </h2>
           </div>
         </div>
+        {children}
       </div>
     </>
   );

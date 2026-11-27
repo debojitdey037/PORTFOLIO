@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
 import About from "./About";
 import Career from "./Career";
 import Certifications from "./Certifications";
@@ -13,7 +13,7 @@ import setSplitText from "./utils/splitText";
 
 const TechStack = lazy(() => import("./TechStack"));
 
-const MainContainer = () => {
+const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
@@ -45,10 +45,11 @@ const MainContainer = () => {
       <Cursor />
       <Navbar />
       <SocialIcons />
+      {isDesktopView && children}
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <div className="container-main">
-            <Landing />
+            <Landing>{!isDesktopView && children}</Landing>
             <About />
             <WhatIDo />
             <Career />
