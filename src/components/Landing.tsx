@@ -1,10 +1,12 @@
 import { PropsWithChildren } from "react";
+import HeroPortrait from "./HeroPortrait";
 import "./styles/Landing.css";
 
 const Landing = ({ children }: PropsWithChildren) => {
   return (
     <>
       <div className="landing-section" id="landingDiv">
+        <HeroPortrait />
         <div className="landing-container">
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
